@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "n3-lineage"
+version = "0.1.0"
+description = "Upgrade history and manifest/NEF diffs for Neo N3 smart contracts, from public RPC only"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [{ name = "apeir" }]
+keywords = ["neo", "neo3", "n3", "smart-contracts", "blockchain", "manifest", "upgrade"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/apeirs/n3-lineage"
+
+[project.scripts]
+n3-lineage = "n3lineage.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

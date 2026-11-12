@@ -1,0 +1,1492 @@
+{
+"[\"getcontractstate\",[\"0xcc5e4edd9f5f8dba8bb65734541df7a1c081c67b\"]]": {
+"hash": "0xcc5e4edd9f5f8dba8bb65734541df7a1c081c67b",
+"id": -7,
+"manifest": {
+"abi": {
+"events": [
+{
+"name": "MillisecondsPerBlockChanged",
+"parameters": [
+{
+"name": "old",
+"type": "Integer"
+},
+{
+"name": "new",
+"type": "Integer"
+}
+]
+},
+{
+"name": "WhitelistFeeChanged",
+"parameters": [
+{
+"name": "contract",
+"type": "Hash160"
+},
+{
+"name": "method",
+"type": "String"
+},
+{
+"name": "argCount",
+"type": "Integer"
+},
+{
+"name": "fee",
+"type": "Any"
+}
+]
+},
+{
+"name": "RecoveredFund",
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+}
+]
+}
+],
+"methods": [
+{
+"name": "blockAccount",
+"offset": 0,
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "getAttributeFee",
+"offset": 7,
+"parameters": [
+{
+"name": "attributeType",
+"type": "Integer"
+}
+],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getBlockedAccounts",
+"offset": 14,
+"parameters": [],
+"returntype": "InteropInterface",
+"safe": true
+},
+{
+"name": "getExecFeeFactor",
+"offset": 21,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getExecPicoFeeFactor",
+"offset": 28,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getFeePerByte",
+"offset": 35,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getMaxTraceableBlocks",
+"offset": 42,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getMaxValidUntilBlockIncrement",
+"offset": 49,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getMillisecondsPerBlock",
+"offset": 56,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getStoragePrice",
+"offset": 63,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getWhitelistFeeContracts",
+"offset": 70,
+"parameters": [],
+"returntype": "InteropInterface",
+"safe": true
+},
+{
+"name": "isBlocked",
+"offset": 77,
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": true
+},
+{
+"name": "recoverFund",
+"offset": 84,
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+},
+{
+"name": "token",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "removeWhitelistFeeContract",
+"offset": 91,
+"parameters": [
+{
+"name": "contractHash",
+"type": "Hash160"
+},
+{
+"name": "method",
+"type": "String"
+},
+{
+"name": "argCount",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setAttributeFee",
+"offset": 98,
+"parameters": [
+{
+"name": "attributeType",
+"type": "Integer"
+},
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setExecFeeFactor",
+"offset": 105,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setFeePerByte",
+"offset": 112,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setMaxTraceableBlocks",
+"offset": 119,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setMaxValidUntilBlockIncrement",
+"offset": 126,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setMillisecondsPerBlock",
+"offset": 133,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setStoragePrice",
+"offset": 140,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setWhitelistFeeContract",
+"offset": 147,
+"parameters": [
+{
+"name": "contractHash",
+"type": "Hash160"
+},
+{
+"name": "method",
+"type": "String"
+},
+{
+"name": "argCount",
+"type": "Integer"
+},
+{
+"name": "fixedFee",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "unblockAccount",
+"offset": 154,
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+}
+]
+},
+"extra": null,
+"features": {},
+"groups": [],
+"name": "PolicyContract",
+"permissions": [
+{
+"contract": "*",
+"methods": "*"
+}
+],
+"supportedstandards": [],
+"trusts": []
+},
+"nef": {
+"checksum": 2681632925,
+"compiler": "neo-core-v3.0",
+"magic": 860243278,
+"script": "EEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0A=",
+"source": "",
+"tokens": []
+},
+"updatecounter": 2
+},
+"[\"getcontractstate\",[\"0xf0151f528127558851b39c2cd8aa47da7418ab28\"]]": {
+"hash": "0xf0151f528127558851b39c2cd8aa47da7418ab28",
+"id": 26,
+"manifest": {
+"abi": {
+"events": [
+{
+"name": "Transfer",
+"parameters": [
+{
+"name": "arg1",
+"type": "Hash160"
+},
+{
+"name": "arg2",
+"type": "Hash160"
+},
+{
+"name": "arg3",
+"type": "Integer"
+}
+]
+},
+{
+"name": "AddAuthor",
+"parameters": [
+{
+"name": "obj",
+"type": "Hash160"
+}
+]
+},
+{
+"name": "RemoveAuthor",
+"parameters": [
+{
+"name": "obj",
+"type": "Hash160"
+}
+]
+}
+],
+"methods": [
+{
+"name": "totalSupply",
+"offset": 0,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "balanceOf",
+"offset": 67,
+"parameters": [
+{
+"name": "usr",
+"type": "Hash160"
+}
+],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "transfer",
+"offset": 229,
+"parameters": [
+{
+"name": "from",
+"type": "Hash160"
+},
+{
+"name": "to",
+"type": "Hash160"
+},
+{
+"name": "amount",
+"type": "Integer"
+},
+{
+"name": "data",
+"type": "Any"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "getVersion",
+"offset": 873,
+"parameters": [],
+"returntype": "String",
+"safe": false
+},
+{
+"name": "name",
+"offset": 887,
+"parameters": [],
+"returntype": "String",
+"safe": true
+},
+{
+"name": "symbol",
+"offset": 904,
+"parameters": [],
+"returntype": "String",
+"safe": true
+},
+{
+"name": "decimals",
+"offset": 910,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "burn",
+"offset": 912,
+"parameters": [
+{
+"name": "user",
+"type": "Hash160"
+},
+{
+"name": "amount",
+"type": "Integer"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "getOwner",
+"offset": 1057,
+"parameters": [],
+"returntype": "Hash160",
+"safe": true
+},
+{
+"name": "setOwner",
+"offset": 1153,
+"parameters": [
+{
+"name": "owner",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "isAuthor",
+"offset": 1292,
+"parameters": [
+{
+"name": "usr",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": true
+},
+{
+"name": "getAuthorCount",
+"offset": 1351,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getAllAuthor",
+"offset": 1414,
+"parameters": [],
+"returntype": "Array",
+"safe": true
+},
+{
+"name": "addAuthor",
+"offset": 1535,
+"parameters": [
+{
+"name": "newAuthor",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "removeAuthor",
+"offset": 1784,
+"parameters": [
+{
+"name": "author",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "changeFlocksContract",
+"offset": 2058,
+"parameters": [
+{
+"name": "address",
+"type": "Hash160"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "getFLocksContract",
+"offset": 1000,
+"parameters": [],
+"returntype": "Hash160",
+"safe": true
+},
+{
+"name": "mint",
+"offset": 2147,
+"parameters": [
+{
+"name": "minter",
+"type": "Hash160"
+},
+{
+"name": "receiver",
+"type": "Hash160"
+},
+{
+"name": "amount",
+"type": "Integer"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "update",
+"offset": 2388,
+"parameters": [
+{
+"name": "nefFile",
+"type": "ByteArray"
+},
+{
+"name": "manifest",
+"type": "String"
+},
+{
+"name": "data",
+"type": "Any"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "_initialize",
+"offset": 2456,
+"parameters": [],
+"returntype": "Void",
+"safe": false
+}
+]
+},
+"extra": {
+"Author": "",
+"Description": "",
+"Email": "",
+"nef": {
+"optimization": "Basic"
+}
+},
+"features": {},
+"groups": [],
+"name": "FLM",
+"permissions": [
+{
+"contract": "*",
+"methods": "*"
+}
+],
+"supportedstandards": [
+"NEP-17"
+],
+"trusts": []
+},
+"nef": {
+"checksum": 109305758,
+"compiler": "Neo.Compiler.CSharp 3.7.4+8d50de40d413e789f8828dc4107617738cd...",
+"magic": 860243278,
+"script": "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",
+"source": "",
+"tokens": [
+{
+"callflags": "All",
+"hash": "0xfffdc93764dbaddd97c48f252a53ea4643faa3fd",
+"hasreturnvalue": true,
+"method": "getContract",
+"paramcount": 1
+},
+{
+"callflags": "All",
+"hash": "0xfffdc93764dbaddd97c48f252a53ea4643faa3fd",
+"hasreturnvalue": false,
+"method": "update",
+"paramcount": 3
+}
+]
+},
+"updatecounter": 2
+},
+"[\"getcontractstate\",[\"0xf970f4ccecd765b63732b821775dc38c25d74f23\"]]": {
+"hash": "0xf970f4ccecd765b63732b821775dc38c25d74f23",
+"id": 29,
+"manifest": {
+"abi": {
+"events": [
+{
+"name": "Fault",
+"parameters": [
+{
+"name": "message",
+"type": "String"
+},
+{
+"name": "paras",
+"type": "Array"
+}
+]
+}
+],
+"methods": [
+{
+"name": "verify",
+"offset": 60,
+"parameters": [],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "getAdmin",
+"offset": 74,
+"parameters": [],
+"returntype": "Hash160",
+"safe": false
+},
+{
+"name": "setAdmin",
+"offset": 152,
+"parameters": [
+{
+"name": "admin",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "update",
+"offset": 284,
+"parameters": [
+{
+"name": "nefFile",
+"type": "ByteArray"
+},
+{
+"name": "manifest",
+"type": "String"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "addLiquidity",
+"offset": 324,
+"parameters": [
+{
+"name": "sender",
+"type": "Hash160"
+},
+{
+"name": "tokenA",
+"type": "Hash160"
+},
+{
+"name": "tokenB",
+"type": "Hash160"
+},
+{
+"name": "amountADesired",
+"type": "Integer"
+},
+{
+"name": "amountBDesired",
+"type": "Integer"
+},
+{
+"name": "amountAMin",
+"type": "Integer"
+},
+{
+"name": "amountBMin",
+"type": "Integer"
+},
+{
+"name": "deadLine",
+"type": "Integer"
+}
+],
+"returntype": "Array",
+"safe": false
+},
+{
+"name": "addLiquidity",
+"offset": 1191,
+"parameters": [
+{
+"name": "tokenA",
+"type": "Hash160"
+},
+{
+"name": "tokenB",
+"type": "Hash160"
+},
+{
+"name": "amountADesired",
+"type": "Integer"
+},
+{
+"name": "amountBDesired",
+"type": "Integer"
+},
+{
+"name": "amountAMin",
+"type": "Integer"
+},
+{
+"name": "amountBMin",
+"type": "Integer"
+},
+{
+"name": "deadLine",
+"type": "Integer"
+}
+],
+"returntype": "Array",
+"safe": false
+},
+{
+"name": "removeLiquidity",
+"offset": 1804,
+"parameters": [
+{
+"name": "sender",
+"type": "Hash160"
+},
+{
+"name": "tokenA",
+"type": "Hash160"
+},
+{
+"name": "tokenB",
+"type": "Hash160"
+},
+{
+"name": "liquidity",
+"type": "Integer"
+},
+{
+"name": "amountAMin",
+"type": "Integer"
+},
+{
+"name": "amountBMin",
+"type": "Integer"
+},
+{
+"name": "deadLine",
+"type": "Integer"
+}
+],
+"returntype": "Array",
+"safe": false
+},
+{
+"name": "removeLiquidity",
+"offset": 2107,
+"parameters": [
+{
+"name": "tokenA",
+"type": "Hash160"
+},
+{
+"name": "tokenB",
+"type": "Hash160"
+},
+{
+"name": "liquidity",
+"type": "Integer"
+},
+{
+"name": "amountAMin",
+"type": "Integer"
+},
+{
+"name": "amountBMin",
+"type": "Integer"
+},
+{
+"name": "deadLine",
+"type": "Integer"
+}
+],
+"returntype": "Array",
+"safe": false
+},
+{
+"name": "quote",
+"offset": 1017,
+"parameters": [
+{
+"name": "amountA",
+"type": "Integer"
+},
+{
+"name": "reserveA",
+"type": "Integer"
+},
+{
+"name": "reserveB",
+"type": "Integer"
+}
+],
+"returntype": "Integer",
+"safe": false
+},
+{
+"name": "getAmountOut",
+"offset": 2420,
+"parameters": [
+{
+"name": "amountIn",
+"type": "Integer"
+},
+{
+"name": "reserveIn",
+"type": "Integer"
+},
+{
+"name": "reserveOut",
+"type": "Integer"
+}
+],
+"returntype": "Integer",
+"safe": false
+},
+{
+"name": "getAmountIn",
+"offset": 2496,
+"parameters": [
+{
+"name": "amountOut",
+"type": "Integer"
+},
+{
+"name": "reserveIn",
+"type": "Integer"
+},
+{
+"name": "reserveOut",
+"type": "Integer"
+}
+],
+"returntype": "Integer",
+"safe": false
+},
+{
+"name": "getAmountsOut",
+"offset": 2573,
+"parameters": [
+{
+"name": "amountIn",
+"type": "Integer"
+},
+{
+"name": "paths",
+"type": "Array"
+}
+],
+"returntype": "Array",
+"safe": false
+},
+{
+"name": "getAmountsIn",
+"offset": 2762,
+"parameters": [
+{
+"name": "amountOut",
+"type": "Integer"
+},
+{
+"name": "paths",
+"type": "Array"
+}
+],
+"returntype": "Array",
+"safe": false
+},
+{
+"name": "getReserves",
+"offset": 729,
+"parameters": [
+{
+"name": "tokenA",
+"type": "Hash160"
+},
+{
+"name": "tokenB",
+"type": "Hash160"
+}
+],
+"returntype": "Array",
+"safe": false
+},
+{
+"name": "onNEP17Payment",
+"offset": 2951,
+"parameters": [
+{
+"name": "sender",
+"type": "Hash160"
+},
+{
+"name": "amountIn",
+"type": "Integer"
+},
+{
+"name": "data",
+"type": "Any"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "swapTokenInForTokenOut",
+"offset": 2955,
+"parameters": [
+{
+"name": "sender",
+"type": "Hash160"
+},
+{
+"name": "amountIn",
+"type": "Integer"
+},
+{
+"name": "amountOutMin",
+"type": "Integer"
+},
+{
+"name": "paths",
+"type": "Array"
+},
+{
+"name": "deadLine",
+"type": "Integer"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "swapTokenInForTokenOut",
+"offset": 3612,
+"parameters": [
+{
+"name": "amountIn",
+"type": "Integer"
+},
+{
+"name": "amountOutMin",
+"type": "Integer"
+},
+{
+"name": "paths",
+"type": "Array"
+},
+{
+"name": "deadLine",
+"type": "Integer"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "swapTokenOutForTokenIn",
+"offset": 3867,
+"parameters": [
+{
+"name": "sender",
+"type": "Hash160"
+},
+{
+"name": "amountOut",
+"type": "Integer"
+},
+{
+"name": "amountInMax",
+"type": "Integer"
+},
+{
+"name": "paths",
+"type": "Array"
+},
+{
+"name": "deadLine",
+"type": "Integer"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "swapTokenOutForTokenIn",
+"offset": 4080,
+"parameters": [
+{
+"name": "amountOut",
+"type": "Integer"
+},
+{
+"name": "amountInMax",
+"type": "Integer"
+},
+{
+"name": "paths",
+"type": "Array"
+},
+{
+"name": "deadLine",
+"type": "Integer"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "getExchangePairWithAssert",
+"offset": 843,
+"parameters": [
+{
+"name": "tokenA",
+"type": "Hash160"
+},
+{
+"name": "tokenB",
+"type": "Hash160"
+}
+],
+"returntype": "Hash160",
+"safe": false
+},
+{
+"name": "_initialize",
+"offset": 4343,
+"parameters": [],
+"returntype": "Void",
+"safe": false
+}
+]
+},
+"extra": {
+"Author": "Flamingo Finance",
+"Description": "This is a Flamingo Contract",
+"Email": "developer@flamingo.finance"
+},
+"features": {},
+"groups": [],
+"name": "FlamingoSwapRouter",
+"permissions": [
+{
+"contract": "*",
+"methods": "*"
+}
+],
+"supportedstandards": [],
+"trusts": []
+},
+"nef": {
+"checksum": 2884639513,
+"compiler": "Neo.Compiler.CSharp 3.3.0",
+"magic": 860243278,
+"script": "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//9/MgwDAAAAAAEAAACfc3lrznlqzjU3+P//dGwRzmwQzmhqzjXD/v//SmhrUdBFakqcckVqabUkpmgiAkBXBQIMDElOVkFMSURfUEFUSHnKErg1EPb//3nKxCFwecoRn0oCAAAAgC4EIgpKAv///38yHgP/////AAAAAJFKAv///38yDAMAAAAAAQAAAJ9xeEpoaVHQRWlyIllqEZ9KAgAAAIAuBCIKSgL///9/Mh4D/////wAAAACRSgL///9/MgwDAAAAAAEAAACfc3lqznlrzjV69///dGwRzmwQzmhqzjVS/v//SmhrUdBFakqdckVqELckpmgiAkBXAANAVwIFDBJJbnZhbGlkIFBhcmFtZXRlcnN4StkoUMoAFLOrJAcQ2yAiBXkQtyQHENsgIgV6ELgkBxDbICIGe8oSuCQHENsgIgV8ELc1GvX//wwJRm9yYmlkZGVueEH4J+yMNQT1//8MFUV4Y2VlZGVkIHRoZSBkZWFkbGluZUG3w4gDfLY14fT//3t5Nfj9//9wDBZJbnN1ZmZpY2llbnQgQW1vdW50T3V0aGjKEZ9KAgAAAIAuBCIKSgL///9/Mh4D/////wAAAACRSgL///9/MgwDAAAAAAEAAACfznq4NYb0//97Ec57EM411/b//3FoEM5peHsQzjW69///eHtoNAgR2yAiAkBXCQN5yhGfSgIAAACALgQiCkoC////fzIeA/////8AAAAAkUoC////fzIMAwAAAAABAAAAn3B6WpgmHAwMSW52YWxpZCBQYXRoeRDOeWjOmDUN9P//EHEjKgEAAHlpznJ5aRGeSgIAAACALgQiCkoC////fzIeA/////8AAAAAkUoC////fzIMAwAAAAABAAAAn85zeGkRnkoCAAAAgC4EIgpKAv///38yHgP/////AAAAAJFKAv///38yDAMAAAAAAQAAAJ/OdBB1EHZqDAEAi9shawwBAIvbIbUmCGxKdkUiBmxKdUV6dwdpecoSn0oCAAAAgC4EIgpKAv///38yHgP/////AAAAAJFKAv///38yDAMAAAAAAQAAAJ+1Jj95aRKeSgIAAACALgQiCkoC////fzIeA/////8AAAAAkUoC////fzIMAwAAAAABAAAAn85rNWX1//9KdwdFa2o1WvX//3cIC28Hbm0UwB8MBHN3YXBvCEFifVtSRWlKnHFFaWi1Jdj+//9AVwMEDBJJbnZhbGlkIFBhcmFtZXRlcnN4ELckBxDbICIFeRC4JAcQ2yAiBnrKErgkBxDbICIFexC3NZry//9BOVNuPHAMCUZvcmJpZGRlbmg3AQALmDV+8v//DBVFeGNlZWRlZCB0aGUgZGVhZGxpbmVBt8OIA3u2NVvy//96eDVy+///cQwWSW5zdWZmaWNpZW50IEFtb3VudE91dGlpyhGfSgIAAACALgQiCkoC////fzIeA/////8AAAAAkUoC////fzIMAwAAAAABAAAAn855uDUA8v//ehHOehDONVH0//9yaRDOamh6EM41K/f//2h6aTWC/f//EdsgIgJAVwIFDBJJbnZhbGlkIFBhcmFtZXRlcnN4StkoUMoAFLOrJAcQ2yAiBXkQtyQHENsgIgV6ELgkBxDbICIGe8oSuCQHENsgIgV8ELc1ivH//wwJRm9yYmlkZGVueEH4J+yMNXTx//8MFUV4Y2VlZGVkIHRoZSBkZWFkbGluZUG3w4gDfLY1UfH//3t5NSX7//9wDBJFeGNlc3NpdmUgQW1vdW50SW5oEM56tjUr8f//exHOexDONXzz//9xaBDOaXh7EM41X/T//3h7aDWt/P//EdsgIgJAVwMEDBJJbnZhbGlkIFBhcmFtZXRlcnN4ELckBxDbICIFeRC4JAcQ2yAiBnrKErgkBxDbICIFexC3Ncbw//9BOVNuPHAMCUZvcmJpZGRlbmg3AQALmDWq8P//DBVFeGNlZWRlZCB0aGUgZGVhZGxpbmVBt8OIA3u2NYfw//96eDVb+v//cQwSRXhjZXNzaXZlIEFtb3VudEluaRDOebY1YfD//3oRznoQzjWy8v//cmkQzmpoehDONYz1//9oemk14/v//xHbICICQFcAAnl4QZv2Z85B5j8YhEBXAAJ52yh4QZv2Z85B5j8YhEDbKEBXAAJ52yh4QZv2Z85B5j8YhEBB5j8YhEBWAwwUvd9AmPh4yfszwD/PNoKmBDzVNYZgDBT8bgpYLZt+7iTRvuDrgnkNYSAtymEMFCj+EAUcJIjX8qtwtTu1P80NzZLkYkA=",
+"source": "",
+"tokens": [
+{
+"callflags": "All",
+"hash": "0xfffdc93764dbaddd97c48f252a53ea4643faa3fd",
+"hasreturnvalue": false,
+"method": "update",
+"paramcount": 3
+},
+{
+"callflags": "All",
+"hash": "0xfffdc93764dbaddd97c48f252a53ea4643faa3fd",
+"hasreturnvalue": true,
+"method": "getContract",
+"paramcount": 1
+}
+]
+},
+"updatecounter": 11
+},
+"[\"getcontractstate\",[\"PolicyContract\"]]": {
+"hash": "0xcc5e4edd9f5f8dba8bb65734541df7a1c081c67b",
+"id": -7,
+"manifest": {
+"abi": {
+"events": [
+{
+"name": "MillisecondsPerBlockChanged",
+"parameters": [
+{
+"name": "old",
+"type": "Integer"
+},
+{
+"name": "new",
+"type": "Integer"
+}
+]
+},
+{
+"name": "WhitelistFeeChanged",
+"parameters": [
+{
+"name": "contract",
+"type": "Hash160"
+},
+{
+"name": "method",
+"type": "String"
+},
+{
+"name": "argCount",
+"type": "Integer"
+},
+{
+"name": "fee",
+"type": "Any"
+}
+]
+},
+{
+"name": "RecoveredFund",
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+}
+]
+}
+],
+"methods": [
+{
+"name": "blockAccount",
+"offset": 0,
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "getAttributeFee",
+"offset": 7,
+"parameters": [
+{
+"name": "attributeType",
+"type": "Integer"
+}
+],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getBlockedAccounts",
+"offset": 14,
+"parameters": [],
+"returntype": "InteropInterface",
+"safe": true
+},
+{
+"name": "getExecFeeFactor",
+"offset": 21,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getExecPicoFeeFactor",
+"offset": 28,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getFeePerByte",
+"offset": 35,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getMaxTraceableBlocks",
+"offset": 42,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getMaxValidUntilBlockIncrement",
+"offset": 49,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getMillisecondsPerBlock",
+"offset": 56,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getStoragePrice",
+"offset": 63,
+"parameters": [],
+"returntype": "Integer",
+"safe": true
+},
+{
+"name": "getWhitelistFeeContracts",
+"offset": 70,
+"parameters": [],
+"returntype": "InteropInterface",
+"safe": true
+},
+{
+"name": "isBlocked",
+"offset": 77,
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": true
+},
+{
+"name": "recoverFund",
+"offset": 84,
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+},
+{
+"name": "token",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+},
+{
+"name": "removeWhitelistFeeContract",
+"offset": 91,
+"parameters": [
+{
+"name": "contractHash",
+"type": "Hash160"
+},
+{
+"name": "method",
+"type": "String"
+},
+{
+"name": "argCount",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setAttributeFee",
+"offset": 98,
+"parameters": [
+{
+"name": "attributeType",
+"type": "Integer"
+},
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setExecFeeFactor",
+"offset": 105,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setFeePerByte",
+"offset": 112,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setMaxTraceableBlocks",
+"offset": 119,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setMaxValidUntilBlockIncrement",
+"offset": 126,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setMillisecondsPerBlock",
+"offset": 133,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setStoragePrice",
+"offset": 140,
+"parameters": [
+{
+"name": "value",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "setWhitelistFeeContract",
+"offset": 147,
+"parameters": [
+{
+"name": "contractHash",
+"type": "Hash160"
+},
+{
+"name": "method",
+"type": "String"
+},
+{
+"name": "argCount",
+"type": "Integer"
+},
+{
+"name": "fixedFee",
+"type": "Integer"
+}
+],
+"returntype": "Void",
+"safe": false
+},
+{
+"name": "unblockAccount",
+"offset": 154,
+"parameters": [
+{
+"name": "account",
+"type": "Hash160"
+}
+],
+"returntype": "Boolean",
+"safe": false
+}
+]
+},
+"extra": null,
+"features": {},
+"groups": [],
+"name": "PolicyContract",
+"permissions": [
+{
+"contract": "*",
+"methods": "*"
+}
+],
+"supportedstandards": [],
+"trusts": []
+},
+"nef": {
+"checksum": 2681632925,
+"compiler": "neo-core-v3.0",
+"magic": 860243278,
+"script": "EEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0AQQRr3e2dAEEEa93tnQBBBGvd7Z0A=",
+"source": "",
+"tokens": []
+},
+"updatecounter": 2
+}
+}

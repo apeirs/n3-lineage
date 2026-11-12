@@ -1,0 +1,6 @@
+{
+"[\"getcontractstate\",[\"0x0000000000000000000000000000000000000000\"]]": {
+"__error__": "getcontractstate: Unknown contract",
+"code": -102
+}
+}
